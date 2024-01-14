@@ -1,0 +1,24 @@
+
+
+function Teste(){
+    console.log("Hello World!!!!")
+}
+
+function createNode(element) {
+    return document.createElement(element);
+}
+
+function Get() {
+    
+    
+    const url = 'https://apigenerator.dronahq.com/api/J4WXW45N/data'
+
+    fetch(url)
+    .then((resp) => resp.json())    
+    .then((data) => console.log(data));
+    let carro = data.results
+    return carro.map(function(Marca){
+        let div = createNode('div')
+    })
+          
+  }

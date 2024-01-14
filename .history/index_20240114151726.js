@@ -18,7 +18,9 @@ function Get() {
     fetch(url)
     .then((resp) => resp.json())    
     .then((data) =>  {
+        console.log('Data from API:', data);
 
+        if (Array.isArray(data) && data.length > 0) {
             data.map(function(carro){
                 let div = createNode('div');
                 let span = createNode('span');
@@ -26,6 +28,9 @@ function Get() {
                 append(div, span);
                 append(document.getElementById('carros'), div);            
             });
+        } else {
+            console.log('Formato de dados inválido ou array vazio');
+        }
     })
     .catch(function(error){
         console.log('Erro na requisição:', error);

@@ -26,6 +26,9 @@ function Get() {
                 append(div, span);
                 append(document.getElementById('carros'), div);            
             });
+        } else {
+            console.log('Formato de dados inválido ou array vazio');
+        }
     })
     .catch(function(error){
         console.log('Erro na requisição:', error);
