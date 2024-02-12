@@ -36,7 +36,7 @@ async function postData(url = '', data = {}) {
 
     const response = await fetch(url, {
   
-      method: 'POST', 
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
   
       mode: 'cors',
   
@@ -63,7 +63,7 @@ async function postData(url = '', data = {}) {
   }
   
   
-  postData('https://apigenerator.dronahq.com/api/J4WXW45N/data', Marca, Modelo, Categoria)
+  postData('https://apigenerator.dronahq.com/api/J4WXW45N/data', Marca, Modelo, Categoria /* OBJETO A SER USADO */)
   
     .then((data) => {
   

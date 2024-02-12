@@ -36,7 +36,7 @@ async function postData(url = '', data = {}) {
 
     const response = await fetch(url, {
   
-      method: 'POST', 
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
   
       mode: 'cors',
   
