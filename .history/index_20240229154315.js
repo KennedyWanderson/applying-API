@@ -82,3 +82,13 @@ async function Get() {
       console.error('Erro na requisição:', error);
   }
 }
+
+  
+  
+  postData('https://apigenerator.dronahq.com/api/J4WXW45N/data', Marca, Modelo, Categoria)
+  
+    .then((data) => {
+  
+      console.log(data);  
+  
+  });

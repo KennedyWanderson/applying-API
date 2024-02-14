@@ -82,3 +82,4 @@ async function Get() {
       console.error('Erro na requisição:', error);
   }
 }
+x'
