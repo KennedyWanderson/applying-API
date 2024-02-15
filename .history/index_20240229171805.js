@@ -77,13 +77,10 @@ async function Get() {
       carrosDiv.innerHTML = ''; // Limpa o conteúdo atual
 
       data.forEach(carro => {
-        const div = document.createElement('div');
-        // Verifique se as propriedades estão definidas antes de acessá-las
-        const marca = carro.Marca !== undefined ? carro.Marca : '';
-        const modelo = carro.Modelo !== undefined ? carro.Modelo : '';
-        const categoria = carro.Categoria !== undefined ? carro.Categoria : '';
-        div.textContent = `${marca} ${modelo} ${categoria}`;
-        carrosDiv.appendChild(div);
+          const div = document.createElement('div');
+          div.textContent = `${marca} ${modelo} ${categoria}`;
+
+          carrosDiv.appendChild(div);
       });
   } catch (error) {
       console.error('Erro na requisição:', error);
