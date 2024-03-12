@@ -19,7 +19,7 @@ app.post('/api/data', (req, res) => {
 app.get('/api/data', (req, res) => {
   // Aqui você pode retornar dados simulados ou dados do banco de dados, por exemplo
   const data = [
-    { marca: 'BMW', modelo: '320i', categoria: 'Sedan' },
+    { marca: 'BMW', modelo: '3', categoria: 'Categoria1' },
     { marca: 'Marca2', modelo: 'Modelo2', categoria: 'Categoria2' },
     // Adicione mais dados se desejar
   ];
